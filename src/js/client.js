@@ -9,13 +9,14 @@ function sleep(n) {
     }
 }
 
+xhttp.open("GET", "https://www.awaland.xyz/zlibrary/cn/message.json", true);
+xhttp.send();
+
 sleep(2000);
 
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        var res = JSON.paser(this.responseText);
-        window.location.href = "https://mc.minecraftbox.link/-----" + res.domain
+        var res = JSON.parse(this.responseText);
+        window.location.href = "https://mc.minecraftbox.link/-----" + res.domain;
     }
-    xhttp.open("GET", "https://www.awaland.xyz/zlibrary/cn/message.json", true);
-    xhttp.send();
 }
