@@ -9,7 +9,7 @@ function sleep(n) {
     }
 }
 
-xhttp.open("GET", "https://www.awaland.xyz/zlibrary/cn/message.json", true);
+xhttp.open("GET", "https://ark.awaland.xyz/zlibrary/cn/message.json", true);
 xhttp.send();
 
 sleep(2000);
