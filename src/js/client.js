@@ -8,6 +8,9 @@ function sleep(n) {
         }
     }
 }
+
+sleep(2000);
+
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var res = JSON.paser(this.responseText);
